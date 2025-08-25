@@ -1,0 +1,63 @@
+.App {
+  background-color: #182937;
+  padding:10px;
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  color: #ff2969;
+ 
+}
+
+.App-logo {
+ transition: width 0.5s ease;
+}
+
+.App-logo:hover {
+  width: 70%;
+}
+
+@keyframes App-logo-spin {
+
+  100% {
+    transition: scale(1.1);
+  }
+}
+
+.App-header {
+    text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.UIContainer{
+  display:flex;
+  flex:1;
+}
+
+.ClickMenu{
+  width:70%;
+  padding:30px;
+  display: flex;
+}
+
+.ClickButton{
+    border: 1px solid white;
+    width: 200px;
+    display: block;
+    text-align:center;
+    margin: auto;
+    margin-top:0;
+    cursor:pointer;
+}
+
+.ClickArea{
+  margin-left:auto;
+  margin-right:auto;
+  height:200px;
+}
+

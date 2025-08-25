@@ -1,0 +1,30 @@
+.upgradeInv{
+    min-width: 120px;
+    margin:15px;
+    border: 1px solid white;
+    padding:10px;
+}
+.saveBtns{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.saveDel{
+    color:red;
+    margin: auto;
+    text-align: center;
+    cursor:pointer;
+    font-size:x-small;
+}
+
+.upgRow{
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+}
+
+.upgCount{
+    margin-left: 10px;
+}
