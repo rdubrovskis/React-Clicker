@@ -1,50 +1,27 @@
-.UpgradeMenu{
-  border: 2px solid 303c47;
-  border-top-left-radius: 20px;
-  margin-top:0px;
+.UpgradeMenu {
+  margin-top: 0px;
   width: 40%;
+  min-width: 250px;
   min-height: 500px;
-  padding:10px;
-  background: linear-gradient(90deg, #303c47 20%, #313c4700 100%);
+  padding: 20px;
+  overflow: hidden;
+  background-color: #303c47;
 }
 
-.UpgradeMenu>h3{
-  text-align:center;
-  margin-bottom:20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  color: #b49c55;
-  font-weight:normal;
+.UpgradeMenu > h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: white;
+  font-size: 22px;
+  font-weight: normal;
 }
 
-ul{
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap:10px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
-}
-
-hr{
-  border-top: 6px solid #182937;
-  margin-top:3px;
-  margin-bottom:3px;
-  border-bottom: 0px;
-    border-right: 0px;
-    border-left: 0px;
-}
-
-.linePink{
-  border-top: 6px solid #FF2969;
-}
-
-.lineGold{
-  border-top: 6px solid #b49c55;
-  margin-top:3px;
-  margin-bottom:3px;
-}
-
-.lineLight{
-  border-top: 6px solid#303c47;
 }

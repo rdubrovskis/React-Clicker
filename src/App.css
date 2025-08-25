@@ -1,30 +1,24 @@
 .App {
   background-color: #182937;
-  padding:10px;
-  display:flex;
-  flex:1;
+
+  display: flex;
+  flex: 1;
+  overflow: auto;
   flex-direction: column;
   color: #ff2969;
- 
+  border-radius: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .App-logo {
- transition: width 0.5s ease;
 }
 
 .App-logo:hover {
-  width: 70%;
-}
-
-@keyframes App-logo-spin {
-
-  100% {
-    transition: scale(1.1);
-  }
 }
 
 .App-header {
-    text-align: center;
+  text-align: center;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 1vmin);
@@ -34,30 +28,37 @@
   color: #61dafb;
 }
 
-.UIContainer{
-  display:flex;
-  flex:1;
+.UIContainer {
+  display: flex;
+  flex: 1;
 }
 
-.ClickMenu{
-  width:70%;
-  padding:30px;
+.ClickMenu {
+  width: 70%;
+  padding: 30px;
   display: flex;
 }
 
-.ClickButton{
-    border: 1px solid white;
-    width: 200px;
-    display: block;
-    text-align:center;
-    margin: auto;
-    margin-top:0;
-    cursor:pointer;
+.ClickButton {
+  width: 200px;
+  height: 200px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
-.ClickArea{
-  margin-left:auto;
-  margin-right:auto;
-  height:200px;
+.ClickButton:hover {
+  opacity: 1;
+}
+.ClickButton:active {
+  filter: brightness(50%);
 }
 
+.ClickArea {
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+}
