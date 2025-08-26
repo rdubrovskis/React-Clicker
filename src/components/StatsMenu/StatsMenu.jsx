@@ -3,7 +3,11 @@ import styles from "./StatsMenu.module.css";
 export function StatsMenu({ upgrades, handleSave, handleLoad, handleClear }) {
   return (
     <div className={styles.statsContainer}>
-      <h2 className={styles.clickerTitle}>ReactClicker</h2>
+      <div className={styles.clickerTitle}>
+        <span className={styles.bit}>Bit</span>
+        <span className={styles.miner}>MINER</span>
+        <hr></hr>
+      </div>
       <ul className={styles.upgradeInv}>
         {upgrades.map((upgrade) => (
           <li className={styles.upgRow}>
@@ -12,8 +16,12 @@ export function StatsMenu({ upgrades, handleSave, handleLoad, handleClear }) {
           </li>
         ))}
         <li className={styles.saveBtns}>
-          <button onClick={handleSave}>Save</button>{" "}
-          <button onClick={handleLoad}>Load</button>
+          <div className={styles.saveBtn} onClick={handleSave}>
+            Save
+          </div>{" "}
+          <div className={styles.saveBtn} onClick={handleLoad}>
+            Load
+          </div>
         </li>
         <li class={styles.saveDel}>
           <span onClick={handleClear}>Delete Save</span>

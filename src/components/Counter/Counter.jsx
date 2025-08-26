@@ -10,7 +10,7 @@ export function Counter({ count, onClick, logo }) {
         onClick={onClick}
       />
       <h2 className={styles.clicks} style={{ textAlign: "center" }}>
-        Clicks:
+        Bits:
       </h2>
       <h2 className={styles.clickCounter} style={{ textAlign: "center" }}>
         {count}

@@ -1,5 +1,5 @@
 .upgradeInv {
-  min-width: 120px;
+  min-width: 150px;
   padding: 10px;
   color: lightslategray;
 }
@@ -21,6 +21,8 @@
 .upgRow {
   display: flex;
   flex-flow: row;
+  font-size: 14px;
+  font-weight: medium;
   justify-content: space-between;
 }
 
@@ -36,5 +38,39 @@
 .clickerTitle {
   text-align: left;
   margin-top: 0px;
-  font-weight: normal;
+  font-weight: 200;
+}
+
+.bit {
+  font-size: 16px;
+  margin-right: 1px;
+  font-weight: 300;
+}
+.miner {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+hr {
+  border-color: rgb(146, 160, 174);
+}
+
+.saveBtn {
+  background-color: lightslategray;
+  padding: 5px 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  border-radius: 16px;
+  margin: 5px;
+  cursor: pointer;
+  color: #303c47;
+}
+
+.saveBtn:hover {
+  background-color: white;
+  scale: 1.02;
+}
+.savebtn:active {
+  scale: 0.98;
 }

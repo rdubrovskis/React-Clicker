@@ -5,8 +5,7 @@
   border-radius: 20px;
   justify-content: space-between;
   filter: drop-shadow(10px 10x 10px black);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-stretch: ultra-expanded;
 }
 
@@ -27,19 +26,17 @@
 .UpgradeActive {
   color: white;
   cursor: pointer;
-  border: 2px solid #303c47;
-  transition: border 0.5s;
   border-radius: 20px;
-  background: #ff2969;
-  background: linear-gradient(90deg, rgba(255, 41, 105, 1)-120%, #182937 120%);
+  transition: all 0.5s;
+  background: #ff296953;
 }
 .UpgradeActive:hover {
-  border: 2px solid #ff2969;
-  border-radius: 20px;
-  transition: scale(1.1);
+  background: #ff2969;
+  scale: 1.01;
 }
-.UpgradeActive > span {
-  color: goldenrod;
+
+.UpgradeActive:active {
+  scale: 0.98;
 }
 
 h1 {
@@ -51,7 +48,7 @@ h1 {
 .pricetag {
   display: flex;
   font-size: 24px;
-  margin-right: 5px;
+  margin-left: 8px;
   align-self: center;
 }
 .nameplate {
@@ -59,12 +56,21 @@ h1 {
   flex-direction: column;
 }
 .nameplate > h1 {
+  font-weight: 300;
+  margin-bottom: 3px;
   text-transform: uppercase;
-  font-weight: 100;
-  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .nameplate > p {
   margin: 0px;
   font-size: 12px;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+.currency {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 2px;
+  font-weight: 300;
 }

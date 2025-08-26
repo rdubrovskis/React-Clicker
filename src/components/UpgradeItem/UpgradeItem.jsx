@@ -13,11 +13,11 @@ export function UpgradeItem({
   let interval = Math.round((upgrade.value / rate) * 1000);
   interval = interval > 120 ? interval : 100;
 
-  let costFormat = Intl.NumberFormat('en-US', {
-            notation: 'compact',
-            maximumFractionDigits: 2,
-            useGrouping: 'always'
-        }).format(upgrade.cost)
+  let costFormat = Intl.NumberFormat("en-US", {
+    notation: "compact",
+    maximumFractionDigits: 2,
+    useGrouping: "always",
+  }).format(upgrade.cost);
 
   useEffect(() => {
     const production =
@@ -61,7 +61,8 @@ export function UpgradeItem({
           <p>{upgrade.description}</p>
         </div>
         <div className={styles.pricetag}>
-          <span>${costFormat}</span>
+          <span className={styles.currency}>β</span>
+          <span>{costFormat}</span>
         </div>
       </div>
     </li>
