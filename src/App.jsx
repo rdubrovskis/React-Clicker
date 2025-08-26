@@ -39,7 +39,7 @@ function App() {
 
     owned += 1;
     setCount((count -= cost));
-    cost = cost + baseCost;
+    cost = Math.round(cost * 1.12);
 
     setUpgrades((prevUpgrades) =>
       prevUpgrades.map((upgrade) =>
