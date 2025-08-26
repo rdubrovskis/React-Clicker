@@ -1,12 +1,21 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 .App {
   background-color: #182937;
-
-  display: flex;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
   flex: 1;
   overflow: auto;
-  flex-direction: column;
   color: #ff2969;
   border-radius: 16px;
+
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -32,6 +41,7 @@
 
 .UIContainer {
   display: flex;
+  height: 100%;
   flex: 1;
 }
 
